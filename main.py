@@ -8,8 +8,8 @@ def file(filename):
     print(data)
 
     # Рег выражение
-    pattern = r'\b\d9\d*9[02468]\b'
-    numbers = re.findall(pattern, data)
+    proverka = r'\b\d9\d*9[02468]\b'
+    numbers = re.findall(proverka, data)
 
     print("Числа из файла подходящие под условия:")
     for num in numbers:
