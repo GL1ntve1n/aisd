@@ -18,7 +18,7 @@ def file(filename):
 
     if numbers:
         min_number = min(map(int,numbers))
-        count = len(list(filter(lambda x:int(x)==min_number,numbers)))
+        count =  numbers.count(str(min_number))
     else:
         min_number = None
         count = 0
